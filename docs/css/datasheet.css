@@ -1,0 +1,197 @@
+/*.version {
+    -weasy-string-set: ver content();
+}*/
+
+@page {
+    size: A5 portrait;
+    margin-top: 1cm;
+    margin-bottom: 1.5cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    @bottom-center {
+        content: "-" counter(page) "-";
+        vertical-align: top;
+    }
+}
+
+@page :first {
+    @bottom-left {
+        content: "Motorisation";
+        font-family: 'Tex Gyre Heros Cn', arial, sans-serif;
+        font-size: 7pt;
+        vertical-align: top;
+    }
+    /*@bottom-right {
+        content: string(ver);
+        font-family: 'Tex Gyre Heros Cn', arial, sans-serif;
+        font-size: 7pt;
+    }*/
+}
+
+@media print {
+    .datasheet .logo > img {
+        display: block;
+        float: left;
+        max-width:4cm;
+        max-height:2cm;
+        margin-top:1mm;
+    }
+    .bordered .row {
+        border-top: 1px solid #dddddd;
+    }
+    .bordered .row:last-child {
+        border-bottom: 1px solid #dddddd;
+    }
+    body {
+        /*background: initial !important;
+        background-color: white !important;*/
+        color: black !important;
+        padding-top: 0;
+    }
+    .datasheet h1[id]:before {
+        height: auto;
+        margin-top: auto;
+        display: none;
+    }
+    .datasheet {
+        color: black!important;
+        font-size: 9pt;
+        line-height: 0.9;
+        padding-left: 5px;
+        font-family: 'Tex Gyre Heros Cn', arial, sans-serif;
+    }
+    .datasheet * {
+        font-family: inherit !important;
+    }
+    .datasheet ul {
+        line-height: 1.3;
+    }
+    .datasheet .table td {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+    }
+    .datasheet p {
+        padding-left: inherit;
+        /*font-family: 'Roboto', sans-serif;*/
+        /*font-family: 'roboto condensed', sans-serif;*/
+    }
+    .newpage {
+        page-break-before: always;
+        margin-top: 0;
+    }
+    .datasheet h1 {
+        color: inherit;
+        text-align: right;
+        margin-top: 0 !important;
+        margin-bottom: 0;
+        font-size: 18pt;
+        font-weight: 600;
+    }
+    .datasheet h1::after {
+        content: "data sheet";
+        display: block;
+        font-size: 10pt;
+    }
+    .datasheet h2 {
+        color: inherit;
+        background-color: #E9E8E7 !important;
+        border-bottom: 1px solid gray;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-top: 20pt;
+        margin-bottom: 10pt;
+        padding-top: 2pt;
+        padding-bottom: 0;
+        padding-left: inherit;
+    }
+    .datasheet h3 {
+        font-size: 9pt;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: inherit;
+    }
+    h2::before {
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+    .subtitle {
+        text-align: right;
+    }
+    .datasheet table {
+        page-break-inside: avoid;
+        width: 100%;
+        table-layout: fixed;
+    }
+    .datasheet .instruction {
+        background-color: white;
+    }
+    table {
+        background-color: white !important;
+    }
+    .datasheet table:nth-of-type(0n+1) tbody tr:nth-child(odd) {
+        background-color: #E9E8E7 !important;
+    }
+    .datasheet table:nth-of-type(0n+2) tbody tr:nth-child(odd) {
+        background-color: initial;
+    }
+    .datasheet table:nth-of-type(0n+3) tbody tr:nth-child(odd) {
+        background-color: initial;
+    }
+    .datasheet td img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .container .datasheet .row img {
+        display: block;
+        margin-left: 1mm;
+        margin-right: 1mm;
+        margin-top: 1mm;
+        margin-bottom: 1mm;
+        max-width: 3cm;
+        max-height: 2cm;
+    }
+    .datasheet th:empty {
+        visibility: collapse;
+    }
+    /*.datasheet .row {
+        margin-bottom: 0;
+        padding-top: 2mm;
+    }*/
+    .datasheet .row p {
+        margin-top:1mm;
+        margin-bottom:1mm;
+        
+    }
+    .height10 {
+        height: 1cm;
+    }
+    .height15 {
+        height: 15mm;
+    }
+    .height20 {
+        height: 2cm;
+    }
+    .height25 {
+        height: 25mm;
+    }
+    .height30 {
+        height: 3cm;
+    }
+    .height35{
+        height:35mm;
+    }
+    .height40 {
+        height: 4cm;
+    }
+    .datasheet img {
+        padding:0;
+        margin-bottom: 3mm;
+        margin-top: 5mm;
+    }
+
+    .full_img_width img{
+        width:100%;
+    }
+}

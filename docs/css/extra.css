@@ -1,0 +1,222 @@
+@media screen {
+    body {
+        background: initial;
+        background-color: #f8f8f8;
+        color: #666 !important;
+    }
+    .logo {
+        display: none;
+    }
+    .navbar-brand>img {
+        max-height: 30px;
+        max-width: 180px;
+    }
+}
+
+.main_logo {
+    max-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: inherit !important;
+}
+
+@media screen and (min-width:480px) {
+    h1,
+    .h1 {
+        font-size: 50px;
+    }
+    h2,.h2{
+        font-size: 40px;
+    }
+    h3,.h3{
+        font-size: 30px;
+    }
+    h4,.h4{
+        font-size:20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h1,
+    .h1 {
+        font-size: 40px;
+    }
+    .col-md-9 {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+@media screen {
+    .instruction {
+        /*background-color: #FFFFFF;*/
+        /*Kaderkleur rond textvelden #D9EDF7 */
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .instruction img {
+        margin: 0px auto 30px !important;
+    }
+}
+
+/*.instruction p img {
+    text-align: right;
+
+}*/
+
+.bs-sidebar .nav>li>a {
+    padding-left: 0;
+}
+
+img {
+    border: 0 !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    
+}
+
+.center{
+    margin-left: auto !important;
+    margin-right:auto !important;
+    display:block !important;
+}
+
+.diagram svg {
+    width: 100%;
+    height: 100%;
+}
+
+.diagram {
+    width: 100%;
+}
+
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.instruction figure{
+    text-align:left;
+}
+figcaption {
+    font-style: italic;
+}
+
+/* Force table to not be like tables anymore */
+/*@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+}*/
+
+ul.navbar-nav:nth-child(1)>li:nth-child(1) {
+    display: none;
+}
+
+.navbar {
+    background-image: initial;
+    background-color: white;
+}
+
+.version{
+    display:none;
+
+}
+
+/*.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #333;
+    background-color: initial;
+}*/
+
+/*.navbar-default .navbar-nav>li>a {
+    color: #666;
+}*/
+
+.no_back_ground {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+blockquote p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.bg-info {
+    background-color: #f5f5f5 !important;
+}
+
+body {
+    background: initial !important;
+    background-color: white !important;
+}
+
+.bordered .row {
+        border-top: 1px solid #dddddd;
+    }
+    .bordered .row:last-child {
+        border-bottom: 1px solid #dddddd;
+    }
+
+.headered .row:first-child {
+    border-top: 0;
+}
+
+.alternating .row:nth-child(2n+1) {
+    background-color: #E9E8E7
+}
+
+.instruction .row {
+    background-color: #f5f5f5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.admonition.success {
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+
+/*MENU*/
+
+/*.active a{
+    background-color: white !important;
+    color:black !important;*/
+    
+
+.open {
+    font-weight: bold;
+}
+.open > .dropdown-toggle {
+    font-weight:bold;
+}
+
+.dropdown-menu .dropdown-menu{
+    padding-left:10px !important;
+}
+.dropdown-menu .dropdown-menu .dropdown-menu{
+    padding-left:15px !important;
+}
+.dropdown-menu .dropdown-menu .dropdown-menu .dropdown-menu{
+    padding-left:20px !important;
+}
+
+img{
+    border-radius: 0 !important
+}
